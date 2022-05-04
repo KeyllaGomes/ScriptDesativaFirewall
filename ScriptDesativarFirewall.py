@@ -1,0 +1,20 @@
+import time
+import pyautogui
+pyautogui.alert('Por favor não acesse na maquina enquanto o sistema estiver executando')
+pyautogui.PAUSE = 0.4
+pyautogui.press('winleft')
+pyautogui.write('windows defender firewall')
+pyautogui.press('enter')
+time.sleep(1)
+location = pyautogui.locateOnScreen("Firewall.png")
+center = pyautogui.center(location)
+pyautogui.click(center)
+location2 = pyautogui.locateOnScreen("Desativar.png")
+center = pyautogui.center(location2)
+pyautogui.click(center)
+location3 = pyautogui.locateOnScreen("Desativar.png")
+center = pyautogui.center(location3)
+pyautogui.click(center)
+location4 = pyautogui.locateOnScreen("Confirmar.png")
+center = pyautogui.center(location4)
+pyautogui.click(center)
